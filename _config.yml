@@ -1,0 +1,130 @@
+# Site
+repository: https://github.com/rishabhverma17/shailesh-nandkeolyar
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Shailesh Nandkeolyar
+title: Analyst @ Ernest & Young (E&Y)
+email: shailesh.nandkeolyar9@gmail.com
+website: resume.rishabhverma.in
+
+# Dark Mode (true/false/never)
+darkmode: true
+
+# Social links
+twitter_username: rishabhverma24
+github_username:  rishabhverma17
+# facebook_username: jekyll
+#instagram_username: jameswgrant
+linkedin_username: rishabhverma1
+
+# Additional icon links
+additional_links:
+additional_links:
+- title: View or Download My Resume
+  icon: fas fa-file-download
+  url: https://rishabhverma17.github.io/DevOpsing_Resume/Resume_RishabhVerma_SDE.pdf
+
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi, my name is Rishabh and I'm a Software Development Engineer 2 @ Snapdeal. I have experience in developing low latency, highly scalable, fault-tolerant, distributed backend services and evolving the architecture for performance and scalability.Experience of Object-Oriented Programming, Object-Oriented Design, Messaging, Event Streaming,Data Structures and Algorithms, Prevalent Design Patterns, Caching,NoSQL, RDBMS.
+
+  I am most skilled in: <mark>Distributed Systems</mark> and <mark>Eating Pizza</mark>
+
+content:
+  - title: Technical Skills # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        description: | # this will include new lines to allow paragraphs
+          <mark>Tech Stack:</mark> Java 8, SpringBoot, Dropwizard, MongoDB, SQL, Aerospike, RESTful API’s, Kafka, Microservices, Data Structures, Algorithms, Agile Development, Elasticsearch, Logstash, Kibana
+          
+          <mark>Tools:</mark> GIT, Jenkins, Maven, Gradle, Kubernetes, Docker, Pinpoint 
+
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Snapdeal
+        link: snapdeal.com
+        link_text: snapdeal.com
+        sub_title: Software Development Engineer II
+        caption: March 2021 - Present
+        quote: >
+          Working in Buyers Platform Backend team, Developing highly available and scalable distributed backend services for Buyers Platform.
+        description: | # this will include new lines to allow paragraphs
+            <mark>Checkout Service:</mark> Improved the checkout service API’s by pre-processing time taking tasks asynchronously and caching external network calls resulting in reduced overall response time by 30% .
+            
+            <mark>OPMS:</mark> Introduced a Rate Limiter and Async workflow using Kafka for crediting Snapcash to users having a TPS around 115+ requests or 10 Million requests a day.
+
+            <mark>Referral System:</mark> Creating a new system from scratch for crediting user snapcash for successful referral and also on completing certain milestones like purchase etc. In this System I am owning the design and development of complete service. Starting from Databases till all the services.
+
+      - layout: left
+        title: Yatra Online Pvt Ltd
+        link: yatra.com
+        link_text: yatra.com
+        sub_title: Software Development Engineer
+        caption: January 2020 - February 2021
+        quote: >
+          Worked in their Hotels Engineering core team.
+        description: | # this will include new lines to allow paragraphs
+            <mark>Build Your Own Package:</mark> Holidays Platform: Building a new Holidays platform at Yatra from scratch in which user can select the destination(s) and date(s) of travel and we would provide them with curated low cost and best star rating package which includes Hotel, Travel(Flight or Intra/Inter state CAB). User can change/replace or update any particular component in the base package from UI making it customizable as per user needs.
+            
+            <mark>Central Logging Pipeline:</mark> Designed a central logger service for external microservices metric logging. This service is made agnostic and easy to integrate with all other microservices.
+            
+            <mark>Auto Suggest:</mark> Created new the de-duplication pipeline for better results.
+      - layout: left
+        title: Delhi Integrated Multi Modal Transit System
+        link: dimts.in
+        link_text: dimts.in
+        sub_title: Software Development Engineer
+        caption: January 2019 - January 2020
+        description: | # this will include new lines to allow paragraphs
+            <mark>Designed DMRC and DIMTS Reconciliation System:</mark> This System reduced reconciliation time by 70% and also eliminated manual effort.
+            
+            <mark>Developed Automated Recovery Service:</mark> Developed tool for automated recovery of trips and shifts corrupted due to operational issues of ETM machine.
+            
+            <mark>ETM Challan:</mark> Redesigned ETM Challan module so that ETM machines can be moved more than once a day. Impact: Reduced ETM Movement cost by 30%
+
+      - layout: left
+        title: Aperta Limited
+        link: aperta.com
+        link_text: aperta.com
+        sub_title: Software Engineer
+        caption: August 2016 - January 2019
+        description: | # this will include new lines to allow paragraphs
+            <mark>Interface Utility:</mark> Developed Bank’s in-house utility which interacts with Core banking system (CBS) and Cheque truncation system (CTS), It Reduced the time by 75% to process 70,000 to 1,00,000 instruments from 16 seconds to less than 4 seconds by redesigning the algorithm.
+            
+            <mark>Clearing House Master:</mark> Developed CHM which reduced overall processing time by 30%: This was achieved by removing bottlenecks, redesigning algorithm and using data structures to aggregate data, process them, create banking software’s business rules and update all Nodal branch systems remotely over network.
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Sharda University
+        caption: 2012 - 2016
+        sub_title: Bachelor Of Technology (B.Tech) in Computer Science
+        description: | # this will include new lines to allow paragraphs
+          During my time at Sharda I learnt most of my key skills that I have taken through my career such as teamwork and working in tight deadlines. I thouroughly enjoyed my time in university and learnt a lot about a healthy work life balance.
+          - <mark>Project:</mark>  [gestureIt](https://gestureit-rishabh.firebaseapp.com/)
+
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
